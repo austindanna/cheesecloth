@@ -7,11 +7,36 @@
         body {
           font-family: "SecularOne", sans-serif;
         }
-        </style>
+    </style>
 <body>
+    <script>
+        const delay = ms => new Promise(res => setTimeout(res, ms));
 
-<h1>I love carson</h1>
-<p>I peed my pants.</p>
-<img src="ghost.jpg" alt="Girl in a jacket" width="500" height="600">
+        const myFunction = async() => {
+            document.body.style.backgroundColor = document.getElementById("color").value;
+            let variable = 0;
+
+            console.log(variable);
+
+            variable = 3;
+
+            console.log(variable);
+
+            while( variable >= 0){
+                console.log(variable);
+                document.getElementById("color").style.paddingLeft = `${variable * 50}px`
+                await delay(5000);
+                variable = variable -1;
+            }
+        }
+    </script>
+
+    <h1>I love carson</h1>
+    <p>I peed my pants.</p>
+    <img src="ghost.jpg" alt="Girl in a jacket" width="500" height="600">
+    <label for="color">color:</label>
+    <input type="text" id="color" name="color"><br><br>  
+    <button onclick="myFunction()" type="button">dont touch me like that!</button>
+
 </body>
 </html>
