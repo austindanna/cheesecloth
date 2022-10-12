@@ -9,6 +9,7 @@
         }
     </style>
 <body>
+    <a href="https://www.bigtoeman.com">link text</a>
     <script>
         const delay = ms => new Promise(res => setTimeout(res, ms));
 
@@ -24,7 +25,7 @@
 
             while( variable >= 0){
                 console.log(variable);
-                document.getElementById("color").style.paddingLeft = `${variable * 50}px`
+                document.getElementById("color").style.width = `${variable * 1000}px`
                 await delay(5000);
                 variable = variable -1;
             }
