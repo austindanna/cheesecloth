@@ -1,0 +1,33 @@
+button {
+    color: green;
+}
+
+.form {
+    background-color: yellowgreen;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+#color{
+    border-radius: 5px;
+}
+
+#color:hover{
+    background-color: mediumvioletred;
+}
+
+.move {
+    width: 200px;
+    float: right;
+}
+
+.jpg {
+    border-radius: 95px;
+}
+
+.jpg:hover {
+    width: 690px;
+    height: auto;
+    transition: 0.5s;
+}
